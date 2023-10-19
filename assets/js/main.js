@@ -36,10 +36,11 @@ function editTodo(todoEl) {
           finishEditing.call(input); // Utilisez "call" pour définir "this" à l'intérieur de finishEditing
       }
   };
+
   function finishEditing() {
       const newText = this.value;
       todoEl.innerHTML = newText;
-      // Ajouter à nouveau le bouton de modification
+      
       const editBtn = document.createElement("button");
       editBtn.innerText = "Modifier";
       editBtn.classList = 'edit';
