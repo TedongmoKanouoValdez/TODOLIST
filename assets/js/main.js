@@ -29,7 +29,7 @@ function editTodo(todoEl) {
   todoEl.innerHTML = "";
   todoEl.appendChild(input);
   input.focus();
-  // Une fois la tâche modifiée (après appui sur "Entrée" ou clic en dehors)
+
   input.onblur = finishEditing;
   input.onkeydown = function(e) {
       if (e.key === "Enter") {
