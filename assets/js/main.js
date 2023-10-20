@@ -49,4 +49,11 @@ function editTodo(todoEl) {
       };
       todoEl.appendChild(editBtn);
   }
+  function toggleCompleted(todoTextEl) {
+    if (todoTextEl.style.textDecoration === "line-through") {
+      todoTextEl.style.textDecoration = "none";
+    } else {
+      todoTextEl.style.textDecoration = "line-through";
+    }
+  }
 }
